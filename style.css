@@ -8,6 +8,12 @@
     --fonte-padrão: "Inter", sans-serif;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #141414;
     font-family: var(--fonte-padrão);
@@ -18,7 +24,7 @@ main {
     height: 96vh;
 }
 
-section {
+article {
     background-color: var(--cor00);
     padding: 30px;
     border-radius: 10px;
@@ -32,7 +38,7 @@ section {
     transform: translate(-50%, -50%);
 }
 
-section img {
+img {
     display: block;
     margin: auto;
     max-width: 75px;
@@ -40,31 +46,35 @@ section img {
     border-radius: 50%;
 }
 
-section h1 {
+h1 {
     color: #ffffff;
     text-align: center;
     font-size: 1.3em;
     padding: 25px 0px 5px 0px;
-    margin: 0px;
 }
 
-section aside {
+address {
     color: var(--cor01);
     text-align: center;
     font-size: 0.8em;
     font-weight: bold;
-    padding-bottom: 10px;
+    font-style: normal;
+    padding-bottom: 20px;
 }
 
-section p {
+p {
     color: white;
     text-align: center;
     font-size: 0.8em;
-    font-weight: light;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-section a {
+ul {
+    list-style: none;
+    display: inline;
+}
+
+a {
     background-color: var(--cor02);
     color: white;
     text-decoration: none;
@@ -78,11 +88,7 @@ section a {
     border-radius: 5px;
 }
 
-section a#ultimo {
-    margin: 0px;
-}
-
-section a:hover {
+a:hover {
     background-color: var(--cor01);
     color: var(--cor02);
 }
